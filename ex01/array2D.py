@@ -9,7 +9,9 @@ def slice_me(family, start, end):
             assert isinstance(family[i], list), "family is not a 2D list"
             assert len(family[i]) == len(family[0]), "family is not a 2D list"
         arr = np.array(family)
-        print(arr)
+        print('My shape is: ', arr.shape)
+        print('My new shape is: ', arr[start:end].shape)
+        return arr[start:end]
 
     except Exception as e:
         print(e)
