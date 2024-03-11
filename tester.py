@@ -4,7 +4,7 @@ import os
 files = {
     "ex00": ["tester.py", "output"],
     "ex01": ["tester.py", "output"],
-    # "ex02": ["tester.py", "output"],
+    "ex02": ["tester.py", "output"],
     # "ex03": ["tester.py", "output"],
     # "ex04": ["tester.py", "output"],
     # "ex05": ["tester.py", "output"],
