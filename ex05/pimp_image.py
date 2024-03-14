@@ -43,7 +43,8 @@ def ft_blue(array) -> np.array:
 def ft_gray(array) -> np.array:
     """gray color"""
     print("gray the color of the image received.")
-    gray_channel = (array[:, :, 0] / 3 + array[:, :, 1] / 3 + array[:, :, 2] / 3)
+    gray_channel = \
+        (array[:, :, 0] / 3 + array[:, :, 1] / 3 + array[:, :, 2] / 3)
     array[:, :, 0] = gray_channel
     array[:, :, 1] = gray_channel
     array[:, :, 2] = gray_channel

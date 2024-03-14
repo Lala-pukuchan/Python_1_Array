@@ -13,11 +13,12 @@ def rotate(array: np.array):
         img.show()
         img.save("sliced_image.jpeg")
         rotated = np.zeros(shape=sliced.shape)
+        len = sliced.shape[0]
         for x in range(sliced.shape[0]):
             for y in range(sliced.shape[1]):
-                rotated[y, x] = sliced[x, y]
-        print("The shape after Rotate:", rotated)
-        img = Image.fromarray(rotated)
+                rotated[len - 1 - y, x] = sliced[x, y]
+        print("The shape after Rotate:", rotated.astype(np.uint8))
+        img = Image.fromarray(rotated.astype(np.uint8))
         img.show()
         img.save("rotated_image.jpeg")
         return array
